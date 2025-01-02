@@ -11,7 +11,7 @@ const AdminDashboard = () => {
         <h1 className="font-bold">Admins Dashboard</h1>
         <button
           className="px-4 py-2 bg-blue-600 hover:bg-blue-100 hover:text-blue-600 border hover:border-blue-600 text-white rounded-lg "
-          onClick={() => navigate("/login")}
+          onClick={() => navigate("/")}
         >
           Logout
         </button>

@@ -7,7 +7,7 @@ import { AdminDashboard } from "./components/Dashbord/AdminDashboard";
 function App() {
   return (
     <Routes>
-      <Route path="login" element={<Login />} />
+      <Route path="/" element={<Login />} />
       <Route path="student_dashboard" element={<StudentDashboard />} />
       <Route path="teachers_dashboard" element={<TeacherDashboard />} />
       <Route path="admins_dashboard" element={<AdminDashboard />} />
