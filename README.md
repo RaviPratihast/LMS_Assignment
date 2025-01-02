@@ -74,9 +74,4 @@ A modern, responsive Learning Management System prototype built with React and T
 - Component based architecture for maintainability
 - Mock data for demonstration purposes
 
-## Future Enhancements
-
-- Authentication system
-- Real time attendance updates
-- Course content management
 
