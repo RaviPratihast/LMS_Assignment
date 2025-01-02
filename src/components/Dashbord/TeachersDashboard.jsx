@@ -13,7 +13,7 @@ const TeacherDashboard = () => {
 
   return (
     <div className="p-6 space-y-6">
-      <div className="flex flex md:flex-row justify-between items-center gap-4 bg-blue-100 p-4 rounded-lg">
+      <div className="flex md:flex-row justify-between items-center gap-4 bg-blue-100 p-4 rounded-lg">
         <h1 className="text-2xl font-bold text-blue-800">Teacher Dashboard</h1>
         <button
           className="px-4 py-2 bg-blue-600 hover:bg-blue-100 hover:text-blue-600 border hover:border-blue-600 text-white rounded-lg "
