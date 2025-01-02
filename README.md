@@ -27,11 +27,14 @@ A modern, responsive Learning Management System prototype built with React and T
 ## Getting Started
 
 1. Clone the repository
-2. Install dependencies:
+   ```bash
+   git clone https://github.com/RaviPratihast/LMS_Assignment.git
+   ```
+3. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the development server:
+4. Start the development server:
    ```bash
    npm run dev
    ```
