@@ -8,9 +8,9 @@ const initialState = {
   attendance: 85,
   syllabus: 60,
   students: [
-    { id: 1, name: "John Doe", attendance: 80 },
-    { id: 2, name: "Jane Smith", attendance: 90 },
-    { id: 3, name: "Sam Wilson", attendance: 70 },
+    { id: 1, name: "Ravi", attendance: 80, status: "" },
+    { id: 2, name: "Mohan", attendance: 90, status: "" },
+    { id: 3, name: "Shanti", attendance: 70, status: "" },
   ],
   teachers: 10,
   totalStudents: 100,

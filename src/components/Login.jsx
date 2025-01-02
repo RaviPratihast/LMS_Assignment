@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -12,17 +14,21 @@ const Login = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Login Data:", formData);
-    alert(`Logging in as ${formData.role}`);
+  const handleSubmit = () => {
+    if (formData.role === "student") {
+      navigate("/student_dashboard");
+    } else if (formData.role === "teacher") {
+      navigate("/teachers_dashboard");
+    } else if (formData.role === "admin") {
+      navigate("/admins_dashboard");
+    }
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex  flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          Login
+        LMS Login
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -88,6 +94,15 @@ const Login = () => {
             Login
           </button>
         </form>
+        <div className="w-full max-w-md bg-white rounded-lg shadow-lg mt-4">
+          <button
+            type="submit"
+            onClick={handleSubmit}
+            className="w-full py-2 px-4 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            Guest Login
+          </button>
+        </div>
       </div>
     </div>
   );

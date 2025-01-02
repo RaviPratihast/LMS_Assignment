@@ -9,7 +9,11 @@ const DashboardReducer = (state, action) => {
     case "MARK_ATTENDANCE": {
       const updatedStudents = state.students.map((student) =>
         student.id === action.payload.id
-          ? { ...student, attendance: action.payload.attendance }
+          ? {
+              ...student,
+              status:
+                action.payload.attendance === "present" ? "true" : "false",
+            }
           : student
       );
       return { ...state, students: updatedStudents };
