@@ -1,5 +1,12 @@
+import { Routes, Route} from "react-router-dom";
+import { Login } from "./components/Login";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">LMS</h1>;
+  return (
+    <Routes>
+      <Route path="login" element={<Login />} />
+    </Routes>
+  );
 }
 
 export default App;
